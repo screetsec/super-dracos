@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # wifi-automatic script, connect to WPA/WPA2-PSK
 
 # Color
