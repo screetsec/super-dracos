@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 wget ftp://invisible-island.net/xterm/xterm-327.tgz
 sed -i '/v0/{n;s/new:/new:kb=^?:/}' termcap &&
 printf '\tkbs=\\177,\n' >> terminfo &&
