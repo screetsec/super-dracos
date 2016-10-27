@@ -1,17 +1,6 @@
 #!/usr/bin/env bash
 
 echo "Installing firefox"
-# install autoconf
-wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.13.tar.gz
-tar xvf autoconf-2.13.tar.gz
-cd autoconf-2.13
-patch -Np1 -i autoconf-2.13-consolidated_fixes-1.patch
-mv -v autoconf.texi autoconf213.texi 
-rm -v autoconf.info 
-./configure --prefix=/usr --program-suffix=2.13
-make && make install
-cd ../
-
 # install nspr
 wget https://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.13.1/src/nspr-4.13.1.tar.gz
 cd nspr-4.13.1/nspr
