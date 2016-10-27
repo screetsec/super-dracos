@@ -44,15 +44,15 @@ while  [ $again == 'n' ] || [ $again == 'n' ];
 #################################################
 clear
 echo -e $okegreen ""
-echo "     ____              ___________       _				 "
-echo "     \   \            /   /  _____|     / \   			 "
-echo "      \   \    /\    /   /  /          /   \   			 "
-echo "       \   \  /  \  /   /  |          /  _  \  			 "
-echo "        \   \/    \/   /|  |         /  ___  \ 			 "
-echo "         \     /\     /  \  \_____  /  /   \  \			 "
-echo "          \___/  \___/    \_______|/__/     \__\ v1.0      "             
+echo "     ____              _______     _________       		"
+echo "     \   \            /   /   \   /   ______|         		"
+echo "      \   \    /\    /   /     \ /   /                		"
+echo "       \   \  /  \  /   /   _   \   |               		"
+echo "        \   \/    \/   /   ___   \  |             		"
+echo "         \     /\     /   /   \   \  \ _____  			"
+echo "          \___/  \___/___/     \___\ _______| v1.0      	"             
 echo ""
-echo -e $white"          WIFI Connector Automatic"
+echo -e $white"          WIFI Automatic Connector"
 echo -e $cyan ""
 echo -e $white ""
 echo -e $white"     [$okegreen"1"$white]$cyan  CONNECT TO WIFI WPA2-PSK (CREATE NEW CONF)  "
@@ -60,10 +60,10 @@ echo -e $white"     [$okegreen"2"$white]$cyan  CONNECT TO WIFI WPA2-PSK (LOAD OL
 echo -e $white"     [$okegreen"3"$white]$cyan  CONNECT TO WIFI WPA  "
 echo -e $white"     [$okegreen"4"$white]$cyan  EXIT  "
 echo ""
-echo -n -e $BlueF'     \033[4mwca\033[0m >> '; tput sgr0
-read wca
+echo -n -e $BlueF'     \033[4mwac\033[0m >> '; tput sgr0
+read wac
 echo -e $okegreen"     --------------------------------------------------   ";
-		if test $wca == '1'
+		if test $wac == '1'
 			then
 				echo "Create new directory for save configuration"
 				read $name
@@ -91,7 +91,7 @@ echo -e $okegreen"     --------------------------------------------------   ";
 				echo
 				echo "Test your connection!"
 				ping -c3 google.com
-		elif test $wca == '2'
+		elif test $wac == '2'
 			then
 				iwconfig
                 		echo
@@ -108,7 +108,7 @@ echo -e $okegreen"     --------------------------------------------------   ";
                 		echo
                 		echo "Test your connection!"
 				ping -c3 google.com
-		elif test $wca == '3'
+		elif test $wac == '3'
 			then
 				iwconfig
                			echo
@@ -127,7 +127,7 @@ echo -e $okegreen"     --------------------------------------------------   ";
                 		echo
 				echo "Test your connection!"
 				ping -c3 google.com
-		elif test $wca == '5'
+		elif test $wac == '5'
 		      then
 		        clear
 		        exit
@@ -139,4 +139,4 @@ echo -e $okegreen"     --------------------------------------------------   ";
 						       echo -n "Do you want to exit (y/n)?";
 						       read again;
 						    done
-					done
+done
