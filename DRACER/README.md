@@ -8,13 +8,13 @@ DRACER (DracOS Installer) a script to install DracOS Vairusa 1.0 or Leak 2.0 dua
 1.Clone to your system.
 
 
-      $ git clone https://github.com/pixxuser/DRACER.git
+      $ git clone https://github.com/Screetsec/super-dracos
 
 
 2.Enter the directory.
 
 
-      $ cd DRACER
+      $ cd super-dracos/DRACER
    
 
 3.Run the script!
