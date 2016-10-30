@@ -79,7 +79,7 @@ echo -e $okegreen"  ------------------------------------------------------------
 					echo
 					echo -ne " Wait ... "
 					echo
-					xterm gparted
+					gparted
 					echo -ne " Now press optional 3 for next step "
 		elif test $Dracosinstall == '2'
 	 			then
@@ -122,9 +122,9 @@ echo -e $okegreen"  ------------------------------------------------------------
 					fi
 					echo
 					echo -ne " Now rsync dracos , Please wait "
-					xterm rsync -av /mnt/squash/* /mnt/dracos/
+					rsync -av /mnt/squash/* /mnt/dracos/
 					update-grub && update-grub2 > /dev/null 2>&1
-					xterm echo -ne " Complete the installation thankyou for using installer "
+					echo -ne " Complete the installation thankyou for using installer "
 				elif test $Dracosinstall == '4'
 		      then
 		        clear
