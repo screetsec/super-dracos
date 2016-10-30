@@ -27,7 +27,6 @@ DRACER (DracOS Installer) a script to install DracOS Vairusa 1.0 or Leak 2.0 dua
 # Required
 + squashfs-tools
 + rsync
-+ xterm
 
 
 
